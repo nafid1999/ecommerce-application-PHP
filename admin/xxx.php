@@ -1,0 +1,1 @@
+<?=($row->user_id==$row2->user_ID)?"selected":""?>

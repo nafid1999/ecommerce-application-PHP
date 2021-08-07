@@ -1,0 +1,123 @@
+body{ background: #f4f4f4;}
+
+/* start login form*/
+
+.login ,.singup{ width: 300px ; margin:  auto;}
+.login input ,.singup input{ margin-bottom: 10px;}
+.login .form-control,.singup .form-control{  background-color: #E5E5E5; }
+
+.login-page h1 {font-size: 45px;font-weight: bold;  color: #c0c0c0; cursor: pointer;}
+.selected-singup{color:#5cb85c;}
+
+.selected{color: #337AB7;}
+.singup{display: none;}
+
+/* end login form*/
+
+/* update member*/
+.form-group{position: relative;}
+.astrisk{font-size: 25px; position:absolute;top:35px;right:3%;color: red;}
+/*  end update member*/
+
+/* Add member*/
+.show-pass{position: absolute;top: 45px; right:11%;}
+table{background-color: white;}
+thead{background-color:black;color: white;text-align: center;}
+
+/*  end Add member*/
+
+/*dashboard page*/
+.home-stats .stats{padding: 20px ;font-size: 18px; color: white;border-radius: 13px; margin-top: 10px; position: relative; overflow: hidden;}
+.home-stats span{display: block; font-size: 40px; font-weight: bold;}
+.home-stats .st-members {background-color: #3498db;}
+.home-stats  .infos {float: right;}
+.home-stats  .stats i {font-size: 40px; position: absolute; top:50px; left: 15px;}
+
+.home-stats .st-pending {background-color: #c0392b;}
+.home-stats .st-items {background-color: #d35400;}
+.home-stats .st-comments {background-color: #8e44ad;} 
+.home-stats a {text-decoration: none !important; color: white !important;} 
+.latest .card{margin-left: -15px; margin-top: 20px;}
+.latest .card .card-header{color: white;}
+#latest-users  li{padding: 5px; overflow: hidden; margin-bottom: 0;}
+#latest-users  .btn-succes{padding: 0 2px;}
+#latest-users  li:nth-child(odd){background-color: #EEE;border-radius: 2px;}
+#latest-users  .btn{padding: 2px 16px; font-weight: bold;}
+#latest-users  li{ font-weight: bold;}
+.latest .toggle{ font-size: 20px; color: black; cursor: pointer;}
+
+/*  end dashboard page*/
+
+/** catégories page **/
+.categories .cat {
+   position: relative;
+   padding: 15px;
+   overflow: hidden;
+}
+.categories .card-body {
+   
+   padding:0;
+  
+}
+.categories .cat .visible{
+    color:#fff;
+    background-color: #c0392b;
+    padding:4px 16px;
+    border-radius: 5px;
+}
+.categories .cat .comments{
+    color:#fff;
+    background-color: #2c3e55;
+    padding:4px 19px;
+    border-radius: 5px;
+}
+.categories .cat .adds{
+    color:black;
+    background-color: #c0392b;
+    padding:4px 19px;
+    border-radius: 5px;
+}
+.categories .cat .desc{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.categories .cat:hover .hidden-button{
+ right: 15px;
+ transition: all .5s ease-in-out;
+ -webkit-transition: all .5s ease-in-out;
+ -moz-transition: all .5s ease-in-out;
+ 
+}
+.categories .cat:hover{
+ background:#EEE;
+ 
+}
+.categories .cat .hidden-button{
+ position: absolute;
+ right: -190px;
+ top: 40px;
+}
+.categories .cat .btn{
+   padding: 3px 10px;
+
+}
+.categories .sort a{
+  text-decoration: none;
+
+}
+hr{margin: 0;}
+.box-item{position: relative;}
+.box-item span{position: absolute; left: 0;top: 10px; font-weight: bold;background:  #c0392b; color: white; padding: 2px 10px;}
+
+  /******* profile******* */
+  .block{margin-top: 20px;}
+  .information .card-body{font-weight: bold;}
+  .information ul{margin: 0;padding: 0;}
+  .information ul li{padding: 10px;}
+  .information ul li{padding: 10px;}
+  .information ul li:nth-child(odd){background-color: #EEE;}
+  .information ul li span {display:inline-block; min-width: 100px;}
+ 
+
+
+  

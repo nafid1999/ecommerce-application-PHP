@@ -1,0 +1,60 @@
+        <?xml version="1.0" encoding="UTF-8"?>
+        <xs:schema
+            xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+            <xs:element name="evenement">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titre" type="xs:string"></xs:element>
+                        <xs:element name="theme" type="xs:string"></xs:element>
+                        <xs:element name="date" type="xs:string"></xs:element>
+                        <xs:element name="lieu" type="xs:string">
+                            <xs:complexType>
+                                <xs:attribute name="capacite" type="xs:int"></xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="budget">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="montant" type="xs:int"></xs:element>
+                                    <xs:element name="devise" type="xs:string"></xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="activite">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="titre" type="xs:string"></xs:element>
+                                    <xs:element name="duree" type="xs:int"></xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="participant">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="invite">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="nom" type="xs:string"></xs:element>
+                                                <xs:element name="identifiant"></xs:element>
+                                                <xs:element name="nometab" type="xs:string"></xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="intervenant" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="nom" type="xs:string"></xs:element>
+                                                <xs:element name="identifiant" type="xs:int"></xs:element>
+                                                <xs:element name="nometab" type="xs:string"></xs:element>
+                                                <xs:element name="langue" type="xs:string"></xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
